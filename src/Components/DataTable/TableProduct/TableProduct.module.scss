@@ -1,0 +1,67 @@
+.data_table {
+  height: 660px;
+  width: 100%;
+
+  .userr {
+    display: flex;
+    align-items: center;
+
+    .product_image {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  }
+  .productName {
+    display: flex;
+    align-items: center;
+  }
+
+  .status {
+    //
+    &.active {
+      color: green;
+    }
+    &.passive {
+      color: #ff74b1;
+    }
+  }
+
+  .actionn {
+    display: flex;
+    align-items: center;
+
+    .view_btn {
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+      margin-right: 10px;
+      color: #7551f8d2;
+      border: 2px solid #7551f8bd;
+      background: none;
+    }
+
+    .delete_btn {
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+      margin-right: 10px;
+      color: #ff0000cb;
+      border: 2px solid #ff0000cb;
+      background: none;
+    }
+    .update_btn {
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+      color: #ac620ef5;
+      border: 2px solid #ac620ef5;
+      background: none;
+    }
+  }
+}

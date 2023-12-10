@@ -1,0 +1,42 @@
+.input_component {
+  label {
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+
+  .input_field {
+    margin-bottom: 10px;
+    margin-top: 12px;
+    font-size: 16px;
+    padding: 8px 8px;
+    border: 2px solid #ccc;
+    height: 48px;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    transition: border-color 0.2s;
+    
+  }
+  
+  span {
+    color: rgba(255, 0, 0, 0.747);
+    margin-top: 3px;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    display: none;
+  }
+
+  .input_field:invalid[focused="true"]~span {
+    display: block;
+  }
+
+   .input_field::placeholder {
+    color: #413a3a;
+    opacity: 1;
+  }
+  .input_field:invalid[focused="true"]~.input_field {
+    border: 1px solid red;
+  }
+}
