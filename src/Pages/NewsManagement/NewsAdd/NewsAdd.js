@@ -109,7 +109,7 @@ function NewsAdd() {
       <Sidebar />
 
       <div className={styles.new_page}>
-        <Navbar />
+        <Navbar type={'news'} />
 
         <div className={styles.new_page_main}>
           <div className={styles.bPopup}>

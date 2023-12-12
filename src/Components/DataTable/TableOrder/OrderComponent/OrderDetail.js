@@ -23,7 +23,7 @@ function OrderDetail() {
             <Sidebar />
 
             <div className={classes.detail_page_main}>
-                <Navbar />
+                <Navbar type={'order'} />
 
                 <div className={classes.blog_detailss}>
                     

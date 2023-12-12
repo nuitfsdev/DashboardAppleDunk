@@ -119,7 +119,7 @@ function TableGuaranteeDetail(){
         <div className={classes.list_page}>
             <Sidebar />
             <div className={classes.list_page_main}>
-                <Navbar />
+                <Navbar type={'guarantee'} />
                 <div className={classes.data_table}>
                     <div className={classes.btnn}>
                         <Link

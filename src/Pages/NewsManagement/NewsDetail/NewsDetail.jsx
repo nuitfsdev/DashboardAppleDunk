@@ -24,7 +24,7 @@ function NewsDetail() {
             <Sidebar />
 
             <div className={classes.detail_page_main}>
-                <Navbar />
+                <Navbar type={'news'} />
 
                 <div className={classes.blog_detailss}>
                     <h1>{news?.title}</h1>

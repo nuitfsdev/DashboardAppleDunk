@@ -151,7 +151,7 @@ function DetailCustomer() {
             <Sidebar />
 
             <div className={classes.detail_page_main}>
-                <Navbar />
+                <Navbar type={'customer'} />
 
                 <div className={classes.user_info}>
                     <div className={classes.user_detail}>
