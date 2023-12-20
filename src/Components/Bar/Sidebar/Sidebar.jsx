@@ -13,6 +13,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
 import { ColorContext } from '../../../ColorContext/darkContext';
 import { useState, useEffect } from 'react';
+import images from '../../../Assets/Images';
 import './Sidebar.scss';
 
 function Sidebar() {
@@ -34,8 +35,9 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="logo">
-                <Link to="/" style={{ textDecoration: 'none' }}>
-                    <h3 className="text_none">APPLEDUNK</h3>
+                <Link to="/" style={{ textDecoration: 'none', height: "100%" }}>
+                    {/* <h3 className="text_none">APPLEDUNK</h3> */}
+                    <img src={images.logo} alt="Logo" className='logoImg' />
                 </Link>
             </div>
 

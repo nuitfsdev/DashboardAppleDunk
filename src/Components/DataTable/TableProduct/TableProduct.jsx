@@ -117,7 +117,10 @@ function TableProduct() {
             headerName: "Giá",
             width: 150,
             headerAlign: "center",
-            renderCell: (param) => <div>{Number(param.row.gia).toLocaleString() + "đ"}</div>,
+            renderCell: (param) => <div>{new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+              }).format(param.row.gia)}</div>,
         },
         {
             field: "color",

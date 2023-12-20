@@ -4,11 +4,11 @@ $text_color: #3d3c42;
 .sidebar {
   border-right: 1px solid #eee;
   height: 100vh;
-  margin-left: 10px;
+  // margin-left: 10px;
 
   .logo {
     cursor: pointer;
-    color: $icon_color;
+    // background-color: #515154;
     padding: 19px 20px;
     border-bottom: 2px solid #eee;
     border-right: 2px solid #eee;
@@ -24,6 +24,11 @@ $text_color: #3d3c42;
     .text_none {
       text-decoration: none;
       color: $icon_color;
+    }
+
+    .logoImg {
+      height: 100%;
+      object-fit: contain;
     }
   }
 

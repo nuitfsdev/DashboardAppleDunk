@@ -176,9 +176,10 @@ function TablePromotion({type}) {
             field: 'apdung',
             headerName: 'Áp dụng',
             width: 120,
-            renderCell: (param) => (
-                <div className={`status ${param.row.apdung}`}>{param.row.apdung} vnđ</div>
-            ),
+            renderCell: (param) => <div>{new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+              }).format(param.row.apdung)}</div>,
         },
         { 
             field: 'phantramkm', 
